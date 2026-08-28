@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillForge Programmes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="logo">
+        <img src="images/logo.jpeg" alt="University Logo" />
+
+        <div class="logo-text">
+          <h1>UICTO SKILLFORGE</h1>
+          <p>Semester 2026</p>
+        </div>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+        ☰
+      </button>
+
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+
+          <li class="dropdown">
+            <a href="programs.html" class="dropdown-link">
+              Programs <span>▾</span>
+            </a>
+
+            <ul class="dropdown-content">
+              <li><a href="programs.html#cosmetology">Cosmetology</a></li>
+              <li>
+                <a href="programs.html#hardware"
+                  >Hardware & Software Maintenance</a
+                >
+              </li>
+              <li><a href="programs.html#cad">Computer-Aided Design</a></li>
+              <li><a href="programs.html#graphics">Graphic Design</a></li>
+              <li><a href="programs.html#machining">Machining</a></li>
+              <li><a href="programs.html#digital">Digital Technology</a></li>
+            </ul>
+          </li>
+
+          <li><a href="eligibility.html">Eligibility</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="Toggle dark mode"
+      >
+        🌙
+      </button>
+    </header>
+
+    <section class="hero">
+      <h2>SkillForge Training Programmes</h2>
+
+      <p>
+        Explore the six practical skill areas offered during the SkillForge
+        Semester.
+      </p>
+    </section>
+
+    <section class="programme-filter">
+      <h2>Find a Programme</h2>
+
+      <p>
+        Search or select a training area to quickly find the programme you're
+        interested in.
+      </p>
+
+      <div class="programme-search">
+        <input
+          type="search"
+          id="programmeSearch"
+          placeholder="Search programmes..."
+          aria-label="Search programmes"
+        />
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active-filter" data-filter="all">All</button>
+
+        <button class="filter-btn" data-filter="digital">
+          Digital Technology
+        </button>
+
+        <button class="filter-btn" data-filter="design">Design</button>
+
+        <button class="filter-btn" data-filter="technical">Technical</button>
+
+        <button class="filter-btn" data-filter="beauty">Cosmetology</button>
+      </div>
+    </section>
+
+    <section id="cosmetology" class="programme-card" data-category="beauty">
+      <div class="card">
+        <img src="images/cosmetology.jpg" alt="Cosmetology" />
+        <h2>Cosmetology</h2>
+
+        <p>
+          The Cosmetology programme equips students with practical beauty and
+          wellness skills for professional and entrepreneurial careers.
+        </p>
+
+        <h3>Activities Include:</h3>
+
+        <ul>
+          <li>Hair styling and treatment</li>
+          <li>Makeup artistry</li>
+          <li>Facial and skincare techniques</li>
+          <li>Manicure and pedicure</li>
+          <li>Salon management and customer care</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="hardware" class="programme-card" data-category="technical">
+      <div class="card">
+        <img src="images/hardware.jpg" alt="Hardware & Software Maintenance" />
+        <h2>Hardware & Software Maintenance</h2>
+
+        <p>
+          Students learn how to install, repair and maintain computer hardware
+          and software systems.
+        </p>
+
+        <h3>Activities Include:</h3>
+
+        <ul>
+          <li>Computer assembly</li>
+          <li>Operating system installation</li>
+          <li>Software troubleshooting</li>
+          <li>Hardware repairs</li>
+          <li>Computer maintenance</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="cad" class="programme-card" data-category="design">
+      <div class="card">
+        <img src="images/cad.jpg" alt="Computer-Aided Design (CAD)" />
+        <h2>Computer-Aided Design (CAD)</h2>
+
+        <p>
+          Students develop technical drawing and digital design skills using CAD
+          software.
+        </p>
+
+        <h3>Activities Include:</h3>
+
+        <ul>
+          <li>2D drafting</li>
+          <li>3D modelling</li>
+          <li>Architectural drawings</li>
+          <li>Engineering design</li>
+          <li>Project presentations</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="graphics" class="programme-card" data-category="design">
+      <div class="card">
+        <img src="images/graphics.jpg" alt="Graphic Design" />
+        <h2>Graphic Design</h2>
+
+        <p>
+          Students learn creative design principles for digital and print media.
+        </p>
+
+        <h3>Activities Include:</h3>
+
+        <ul>
+          <li>Logo design</li>
+          <li>Flyer and poster design</li>
+          <li>Social media graphics</li>
+          <li>Brand identity design</li>
+          <li>Photo editing</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="machining" class="programme-card" data-category="technical">
+      <div class="card">
+        <img src="images/machining.jpg" alt="Machining" />
+        <h2>Machining</h2>
+
+        <p>
+          This programme develops students' skills in machine operation and
+          manufacturing processes.
+        </p>
+
+        <h3>Activities Include:</h3>
+
+        <ul>
+          <li>Machine operation</li>
+          <li>Workshop safety</li>
+          <li>Metal fabrication</li>
+          <li>Precision measurements</li>
+          <li>Maintenance of machining tools</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="digital" class="programme-card" data-category="digital">
+      <div class="card">
+        <img src="images/digital.jpg" alt="Digital Technology" />
+        <h2>Digital Technology</h2>
+
+        <p>
+          The Digital Technology programme prepares students for careers in the
+          modern digital world through practical ICT training.
+        </p>
+
+        <h3>Activities Include:</h3>
+
+        <ul>
+          <li>HTML5 websites development</li>
+          <li>CSS3 web styling</li>
+          <li>JavaScript fundamentals</li>
+          <li>Cybersecurity awareness</li>
+          <li>Digital productivity tools</li>
+          <li>Team web development projects</li>
+        </ul>
+      </div>
+    </section>
+
+    <p id="noResults" class="no-results">No programme matches your search.</p>
+
+    <footer>
+      <p>
+        &copy; 2026 Ebonyi State University of ICT, Science and Technology,
+        Offerekpe.
+      </p>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      ↑
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

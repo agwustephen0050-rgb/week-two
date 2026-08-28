@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | SkillForge Semester</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="logo">
+        <img src="images/logo.jpeg" alt="University Logo" />
+
+        <div class="logo-text">
+          <h1>UICTO SKILLFORGE</h1>
+          <p>Semester 2026</p>
+        </div>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+        ☰
+      </button>
+
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+
+          <li class="dropdown">
+            <a href="programs.html" class="dropdown-link">
+              Programs <span>▾</span>
+            </a>
+
+            <ul class="dropdown-content">
+              <li><a href="programs.html#cosmetology">Cosmetology</a></li>
+              <li>
+                <a href="programs.html#hardware"
+                  >Hardware & Software Maintenance</a
+                >
+              </li>
+              <li><a href="programs.html#cad">Computer-Aided Design</a></li>
+              <li><a href="programs.html#graphics">Graphic Design</a></li>
+              <li><a href="programs.html#machining">Machining</a></li>
+              <li><a href="programs.html#digital">Digital Technology</a></li>
+            </ul>
+          </li>
+
+          <li><a href="eligibility.html">Eligibility</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="Toggle dark mode"
+      >
+        🌙
+      </button>
+    </header>
+    <section class="hero">
+      <h2>Contact SkillForge Semester</h2>
+
+      <p>We're here to answer your questions and assist you.</p>
+    </section>
+    <section>
+      <h2>Get In Touch</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>📍 Address</h3>
+
+          <p>
+            Ebonyi State University of ICT, Science and Technology, Offerekpe,
+            Izzi, Ebonyi State.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>📧 Email</h3>
+
+          <p>agwustephen50@gmail.com</p>
+        </div>
+
+        <div class="card">
+          <h3>📞 Phone</h3>
+
+          <p>+234 802 508 1166</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Office Hours</h2>
+
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Opening</th>
+          <th>Closing</th>
+        </tr>
+
+        <tr>
+          <td>Monday - Friday</td>
+          <td>8:00 AM</td>
+          <td>4:00 PM</td>
+        </tr>
+
+        <tr>
+          <td>Saturday</td>
+          <td>9:00 AM</td>
+          <td>1:00 PM</td>
+        </tr>
+
+        <tr>
+          <td>Sunday</td>
+          <td colspan="2">Closed</td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <h2>Send Us a Message</h2>
+
+      <form id="contactForm">
+        <label>Full Name</label>
+
+        <input type="text" id="contactName" placeholder="Your Name" required />
+
+        <label>Email Address</label>
+
+        <input
+          type="email"
+          id="contactEmail"
+          placeholder="Your Email"
+          required
+        />
+
+        <label>Phone</label>
+        <input type="tel" id="contactPhone" placeholder="Your Phone" required />
+
+        <label>Subject</label>
+        <input type="text" id="contactSubject" placeholder="Subject" required />
+
+        <label>Message</label>
+
+        <textarea
+          id="contactMessage"
+          placeholder="Your Message"
+          maxlength="500"
+          required
+        ></textarea>
+
+        <div class="message-counter">
+          <span id="messageCount">0</span>/500 characters
+        </div>
+      </form>
+
+      <div id="contactSuccess" class="contact-success">
+        <div class="success-icon">✓</div>
+
+        <h3>Message Sent Successfully!!</h3>
+
+        <p>
+          Thank you for contacting SkillForge. We'll get back to you as soon as
+          possible.
+        </p>
+
+        <button type="button" id="newMessage" class="btn">
+          Send Another Message
+        </button>
+      </div>
+    </section>
+    <section>
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Who can register?</h3>
+
+          <p>All eligible students of the university.</p>
+        </div>
+
+        <div class="card">
+          <h3>Is registration free?</h3>
+
+          <p>Yes. Registration is completely free.</p>
+        </div>
+
+        <div class="card">
+          <h3>How will I receive updates?</h3>
+
+          <p>Through your official SkillForge WhatsApp group.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">
+            What is SkillForge Semester?
+            <span>+</span>
+          </button>
+
+          <div class="faq-answer">
+            <p>
+              SkillForge Semester is a practical digital technology training
+              programme designed to help students develop useful technical and
+              practical skills.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Who can participate?
+            <span>+</span>
+          </button>
+
+          <div class="faq-answer">
+            <p>
+              Eligible students of the university can participate in the
+              available SkillForge training programmes.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What programmes are available?
+            <span>+</span>
+          </button>
+
+          <div class="faq-answer">
+            <p>
+              SkillForge offers several practical training areas, including
+              Digital Technology, Graphic Design, CAD, Machining, Cosmetology,
+              and Hardware & Software Maintenance.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How can I register?
+            <span>+</span>
+          </button>
+
+          <div class="faq-answer">
+            <p>
+              Visit the Eligibility page and complete the registration form to
+              begin your application.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Where can I find the training schedule?
+            <span>+</span>
+          </button>
+
+          <div class="faq-answer">
+            <p>
+              You can view the official training timetable on the Schedule page.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h3>SkillForge Semester</h3>
+
+          <p>Practical Skills. Real Future.</p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+
+          <p>Home</p>
+
+          <p>About</p>
+
+          <p>Programs</p>
+
+          <p>Eligibility</p>
+
+          <p>Schedule</p>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+
+          <p>Email: agwustephen50@gmail.com</p>
+
+          <p>Phone: +234 808 508 1166</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <p>
+        &copy; 2026 Ebonyi State University of ICT, Science and Technology. All
+        Rights Reserved.
+      </p>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      ↑
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

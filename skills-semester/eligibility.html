@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eligibility & Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="logo">
+        <img src="images/logo.jpeg" alt="University Logo" />
+
+        <div class="logo-text">
+          <h1>UICTO SKILLFORGE</h1>
+          <p>Semester 2026</p>
+        </div>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+        ☰
+      </button>
+
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+
+          <li class="dropdown">
+            <a href="programs.html" class="dropdown-link">
+              Programs <span>▾</span>
+            </a>
+
+            <ul class="dropdown-content">
+              <li><a href="programs.html#cosmetology">Cosmetology</a></li>
+              <li>
+                <a href="programs.html#hardware"
+                  >Hardware & Software Maintenance</a
+                >
+              </li>
+              <li><a href="programs.html#cad">Computer-Aided Design</a></li>
+              <li><a href="programs.html#graphics">Graphic Design</a></li>
+              <li><a href="programs.html#machining">Machining</a></li>
+              <li><a href="programs.html#digital">Digital Technology</a></li>
+            </ul>
+          </li>
+
+          <li><a href="eligibility.html">Eligibility</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="Toggle dark mode"
+      >
+        🌙
+      </button>
+    </header>
+    <section class="hero">
+      <h2>Eligibility & Registration</h2>
+
+      <p>
+        Join the SkillForge Semester and develop practical skills for the
+        future.
+      </p>
+    </section>
+
+    <section>
+      <h2>Who Can Apply?</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Registered Student</h3>
+          <p>
+            Applicant must be a registered student of Ebonyi State University of
+            ICT, Science and Technology.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Commitment</h3>
+          <p>
+            Students must be willing to attend practical classes and complete
+            projects.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Good Conduct</h3>
+          <p>
+            Applicants should maintain discipline and cooperate with
+            instructors.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="notice">
+      <h2>Important Notice</h2>
+
+      <ul>
+        <li>Registration is free for all eligible students.</li>
+
+        <li>Complete every required field correctly.</li>
+
+        <li>Upload a recent passport photograph.</li>
+
+        <li>Select only one SkillForge programme.</li>
+
+        <li>Training begins on 20th July, 2026.</li>
+
+        <li>Join your assigned WhatsApp group after registration.</li>
+      </ul>
+    </section>
+    <div class="steps">
+      <div class="step active">
+        Step 1
+
+        <p>Personal Info</p>
+      </div>
+
+      <div class="step">
+        Step 2
+
+        <p>Academic Info</p>
+      </div>
+
+      <div class="step">
+        Step 3
+
+        <p>Complete</p>
+      </div>
+    </div>
+
+    <section>
+      <h2>Student Registration Form</h2>
+    </section>
+
+    <form id="registrationForm">
+      <!-- =========================
+         STEP 1
+    ========================== -->
+
+      <div class="form-step active-step">
+        <h3>Personal Information</h3>
+
+        <label>Passport Photograph</label>
+        <input type="file" accept="image/*" />
+
+        <label>Full Name</label>
+        <input type="text" required />
+
+        <label>Date of Birth</label>
+        <input type="date" required />
+
+        <label>Gender</label>
+        <select required>
+          <option value="">Select Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+
+        <label>Phone Number</label>
+        <input type="tel" required pattern="[0-9]{11}" />
+
+        <label>Email Address</label>
+        <input type="email" required />
+
+        <label>State of Origin</label>
+        <input type="text" required />
+
+        <label>Local Government Area</label>
+        <input type="text" required />
+
+        <button type="button" class="form-next btn">Next →</button>
+      </div>
+
+      <!-- =========================
+         STEP 2
+    ========================== -->
+
+      <div class="form-step">
+        <h3>Academic Information</h3>
+
+        <label>Matric Number</label>
+        <input type="text" required />
+
+        <label>Faculty</label>
+        <input type="text" required />
+
+        <label>Department</label>
+        <input type="text" required />
+
+        <label>Level</label>
+
+        <select required>
+          <option value="">Choose Level</option>
+          <option>100 Level</option>
+          <option>200 Level</option>
+          <option>300 Level</option>
+          <option>400 Level</option>
+        </select>
+
+        <div class="form-buttons">
+          <button type="button" class="form-prev btn">← Previous</button>
+
+          <button type="button" class="form-next btn">Next →</button>
+        </div>
+      </div>
+
+      <!-- =========================
+         STEP 3
+    ========================== -->
+
+      <div class="form-step">
+        <h3>Skill Selection</h3>
+
+        <label>Select Training Programme</label>
+
+        <select required>
+          <option value="">Choose Programme</option>
+          <option>Digital Technology</option>
+          <option>Graphic Design</option>
+          <option>CAD</option>
+          <option>Machining</option>
+          <option>Cosmetology</option>
+          <option>Hardware & Software Maintenance</option>
+        </select>
+
+        <label>Why do you want to join SkillForge?</label>
+
+        <textarea
+          rows="5"
+          placeholder="Tell us why you want to join..."
+          required
+        ></textarea>
+
+        <h3>Create Your Account</h3>
+
+        <label>Password</label>
+        <input type="password" id="password" required minlength="8" />
+
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword" required minlength="8" />
+
+        <label class="agreement">
+          <input type="checkbox" required />
+          I certify that the information provided is correct.
+        </label>
+
+        <div class="form-buttons">
+          <button type="button" class="form-prev btn">← Previous</button>
+
+          <button type="submit" class="btn">REGISTER NOW</button>
+        </div>
+      </div>
+    </form>
+
+    <section class="help">
+      <h2>Need Assistance?</h2>
+
+      <p>Email: agwustephen0050@gmail.com</p>
+
+      <p>Phone: +234 808 508 1166</p>
+
+      <p>Office Hours: Monday - Friday 9:00 AM - 4:00 PM</p>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2026 Ebonyi State University of ICT, Science and Technology,
+        Offerekpe.
+      </p>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      ↑
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
